@@ -11,14 +11,14 @@ source "https://rubygems.org"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "github-pages"
+  gem "github-pages", ">= 199"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # HTML Checking
-gem 'html-proofer'
+gem 'html-proofer', '>= 3.12.1'
 
 # Create `.env`and add the following entry to avoid a warning message when using the jekyll cli: "JEKYLL_GITHUB_TOKEN=<personal access token>"
 gem "dotenv"
